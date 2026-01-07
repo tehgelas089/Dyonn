@@ -22,18 +22,35 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/my.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 
 </head>
 
 <body>
     <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
+   <div id="preloader">
+  <div class="sharingon">
+    <div class="ring">
+      <div class="to"></div>
+      <div class="to"></div>
+      <div class="to"></div>
+      <div class="circle"></div>
     </div>
+  </div>
+</div>
+
+<style>
+
+</style>
+
+
+
+
 
     <!-- Header Section Begin -->
     <header class="header position-fixed" style="background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(8px);
@@ -49,7 +66,7 @@
                     <div class="header__nav__option">
                         <nav class="header__nav__menu mobile-menu" >
                             <ul>
-                                <li class="active"><a href="#home">Home</a></li>
+                                <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#projek">Portfolio</a></li>
                                 
@@ -58,11 +75,8 @@
                             </ul>
                         </nav>
                         <div class="header__nav__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#">Dyonn</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -83,7 +97,7 @@
             <div class="col-lg-6">
                 <div class="hero__text">
                     <span>Hai saya adalah seorang </span>
-                    <h2>Web Desainer</h2>
+                    <h2>Frontend Developer</h2>
                     <a href="#about" class="primary-btn">Kenali lebih </a>
                 </div>
             </div>
@@ -108,7 +122,7 @@
             <div class="col-lg-6">
                 <div class="hero__text">
                     <span>Hallo saya adalah seorang </span>
-                    <h2>Ui/Ux Desainer</h2>
+                    <h2>Web desainer</h2>
                     <a href="#about" class="primary-btn">Kenali lebih </a>
                 </div>
             </div>
@@ -153,8 +167,9 @@
                             <span>Perkenalkan saya</span>
                             <h2>Dion Septian Kevin</h2>
                         </div>
-                        <p> Saya adalah siswa SMK jurusan Pengembangan Perangkat Lunak dan Gim (PPLG).</p>
-                        <a href="#" class="primary-btn">View all services</a>
+                        <p>Saya adalah siswa SMK jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) yang berfokus pada pengembangan desain website dan aplikasi, serta memiliki ketertarikan dalam UI/UX, front-end development, dan pembuatan tampilan digital yang modern dan responsif.
+                        </p>
+                       
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -166,7 +181,7 @@
                                 </div>
                                 <h4>Boostrap</h4>
                                 
-                                  <div class="mb-4 skill-item" data-aos="fade-right" data-percent="80">
+                                  <div class="mb-4 skill-item" data-aos="fade-up" data-percent="80">
                             <div class="d-flex align-items-center gap-3">
                             
                             <div class="w-100">
@@ -190,11 +205,11 @@
                                 </div>
                                 <h4>Tailwind</h4>
                                
-                                 <div class="mb-4 skill-item" data-aos="fade-right" data-percent="60">
+                                 <div class="mb-4 skill-item" data-aos="fade-up" data-percent="60">
                             <div class="d-flex align-items-center gap-3">
                             <div class="w-100">
                                 <div class="d-flex justify-content-between text-white">
-                                <span>Kemampuan/span>
+                                <span>Kemampuan</span>
                                 <span class="skill-percent">60%</span>
                                 </div>
                                 <div class="skill-bar">
@@ -214,7 +229,7 @@
                                 </div>
                                 <h4>Java script</h4>
                                
-                                <div class="mb-4 skill-item" data-aos="fade-right" data-percent="70">
+                                <div class="mb-4 skill-item" data-aos="fade-up" data-percent="70">
                             <div class="d-flex align-items-center gap-3">
                             
                             <div class="w-100">
@@ -238,7 +253,7 @@
                                 </div>
                                 <h4>CSS</h4>
                                
-                                  <div class="mb-4 skill-item" data-aos="fade-right" data-percent="85">
+                                  <div class="mb-4 skill-item" data-aos="fade-up" data-percent="85">
                                 <div class="d-flex align-items-center gap-3">
                                 
                                 <div class="w-100">
@@ -261,54 +276,11 @@
         </div>
     </section>
     <style>
-        .skills-overlay{
-  background:rgba(0,0,0,.65);
-  padding:80px 0;
-}
-.skill-bar{
-  background:#000;
-  border-radius:30px;
-  height:18px;
-  overflow:hidden;
-}
-.skill-fill{
-  height:100%;
-  background:linear-gradient(90deg,#00eaff,#4dd6ff);
-}
+     
+     
     </style>
     <!-- Services Section End -->
-<script>
-function animateSkills(){
-  document.querySelectorAll('.skill-item').forEach(item=>{
-    const percent = item.dataset.percent;
-    const bar = item.querySelector('.skill-fill');
-    const text = item.querySelector('.skill-percent');
 
-    let count = 0;
-    const timer = setInterval(()=>{
-      if(count >= percent){
-        clearInterval(timer);
-        bar.style.width = percent + '%';
-        text.innerText = percent + '%';
-      }else{
-        count++;
-        bar.style.width = count + '%';
-        text.innerText = count + '%';
-      }
-    },30);
-  });
-}
-
-let played = false;
-window.addEventListener('scroll',()=>{
-  const section = document.querySelector('.skills');
-  const pos = section.getBoundingClientRect().top;
-  if(pos < window.innerHeight - 100 && !played){
-    played = true;
-    animateSkills();
-  }
-});
-</script>
 
 
    
@@ -365,7 +337,7 @@ window.addEventListener('scroll',()=>{
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title team__title">
-                    <span>Nice to meet</span>
+                    <!-- <span>Nice to meet</span> -->
                     <h2>Project Saya</h2>
                 </div>
             </div>
@@ -468,8 +440,8 @@ data-setbg="img/callto-bg.jpg">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="callto__text">
-                        <h2>Tentukan tujuan dan Gapai tujuan itu dengan langkah sekecil apapun</h2>
-                        <p>INC5000, Best places to work 2019</p>
+                        <h2>"Abaikan keinginan dahulukan Kebutuhan."</h2>
+                        <p>Kakuzu</p>
                        
                     </div>
                 </div>
@@ -568,107 +540,7 @@ data-setbg="img/callto-bg.jpg">
 </div>
 
 <style>
-    .social-login-icons {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
-}
-.social-login-icons svg {
-  width: 40px;
-}
-
-.social-icon-1,
-.social-icon-1-1,
-.social-icon-2,
-.social-icon-2-2,
-.social-icon-3,
-.social-icon-3-3,
-.social-icon-4,
-.social-icon-4-4 {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  margin: 20px 0 0px 0;
-}
-
-.icon svg {
-  fill: #fff;
-}
-
-.socialcontainer {
-  height: 80px;
-  overflow: hidden;
-}
-.social-icon-1 {
-  transition-duration: 0.4s;
-  background-color: rgb(0, 0, 0);
-  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-}
-.social-icon-1 svg,
-.social-icon-2 svg,
-.social-icon-3 svg,
-.social-icon-4 svg {
-  opacity: 0;
-  transition-duration: 0.5s;
-  transition-delay: 0.2s;
-}
-.social-icon-1-1 {
-  transition-duration: 0.4s;
-  background-color: rgb(0, 0, 0, 0);
-}
-.socialcontainer:hover .social-icon-1 {
-  transform: translateY(-70px);
-}
-.socialcontainer:hover .social-icon-1 svg,
-.socialcontainer:hover .social-icon-2 svg,
-.socialcontainer:hover .social-icon-3 svg,
-.socialcontainer:hover .social-icon-4 svg {
-  opacity: 1;
-}
-.social-icon-2 {
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-  background: linear-gradient(
-    72.44deg,
-    #ff7a00 11.92%,
-    #ff0169 51.56%,
-    #d300c5 85.69%
-  );
-}
-.socialcontainer:hover .social-icon-2 {
-  transform: translateY(-70px);
-}
-.social-icon-3 {
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-  background: #316ff6;
-}
-
-.socialcontainer:hover .social-icon-3 {
-  transform: translateY(-70px);
-}
-.social-icon-4 {
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-
-  background: linear-gradient(
-    180deg,
-    rgba(129, 34, 144, 1) 0%,
-    rgba(77, 34, 124, 1) 91%
-  );
-}
-
-.socialcontainer:hover .social-icon-4 {
-  transform: translateY(-70px);
-}
-.social-login-icons {
-  justify-content: flex-end; /* pindah ke samping kanan */
-  width: 100%;
-}
+   
 
 </style>
                         <!-- akhir -->
@@ -681,7 +553,7 @@ data-setbg="img/callto-bg.jpg">
                         <div class="footer__option__item">
                             <h5>Alamat</h5>
                             <p>Indonesia, Jawa Barat,Kab.Bandung</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                            <!-- <a href="#" class="read__more">Read more <span class="arrow_right"></span></a> -->
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
@@ -695,14 +567,7 @@ data-setbg="img/callto-bg.jpg">
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -721,51 +586,7 @@ data-setbg="img/callto-bg.jpg">
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-     <script>
-function smoothScrollTo(targetY, duration = 900) {
-  const startY = window.pageYOffset;
-  const distance = targetY - startY;
-  let startTime = null;
-
-  function easeInOutCubic(t) {
-    return t < 0.5
-      ? 4 * t * t * t
-      : 1 - Math.pow(-2 * t + 2, 3) / 2;
-  }
-
-  function animation(currentTime) {
-    if (!startTime) startTime = currentTime;
-    const timeElapsed = currentTime - startTime;
-    const progress = Math.min(timeElapsed / duration, 1);
-    const ease = easeInOutCubic(progress);
-
-    window.scrollTo(0, startY + distance * ease);
-
-    if (timeElapsed < duration) {
-      requestAnimationFrame(animation);
-    }
-  }
-
-  requestAnimationFrame(animation);
-}
-
-document.querySelectorAll('.header__nav__menu a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const targetId = this.getAttribute('href');
-    const target = document.querySelector(targetId);
-
-    if (target) {
-      const headerHeight = document.querySelector('.header').offsetHeight;
-      const targetPosition =
-        target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-      smoothScrollTo(targetPosition, 900);
-    }
-  });
-});
-</script>
+     
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
@@ -781,6 +602,7 @@ AOS.init({duration:1500,once:true});
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/hal.js"></script>
 </body>
 
 </html>
